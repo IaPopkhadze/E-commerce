@@ -1,0 +1,103 @@
+.search {
+  margin-top: 0.5rem;
+  height: 5rem;
+  color: rgb(88, 83, 83);
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  overflow: hidden;
+ background-color: white;
+
+  .s_left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .s_center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    .s_form {
+      display: flex;
+      width: 100%;
+      position: relative;
+      .s_form_input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        outline: none;
+        padding-left: 0.5rem;
+        border-radius: 7px;
+        box-shadow: 0 0 0.5px 1.2px rgb(217, 215, 215);
+        color: var(--color1);
+        font-size: 1rem;
+      }
+      ::placeholder {
+        color: rgb(201, 196, 196);
+      }
+      .s_search_icon {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 5px;
+        top: 4px;
+        color: rgb(164, 159, 159);
+        cursor: pointer;
+      }
+    }
+  }
+  .s_right {
+  
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    .s_right_heartIcon {
+      position: relative;
+      .heartCounter {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        color: white;
+        background-color: red;
+        font-size: 0.9rem;
+        padding: 0 0.3rem;
+        border-radius: 100%;
+      }
+    }
+    .s_right_cartIcon {
+      position: relative;
+      cursor: pointer;
+      .itemCounter {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        color: white;
+        background-color: red;
+        font-size: 0.9rem;
+        padding: 0 0.3rem;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+@media screen and(max-width:550px) {
+  .search .s_left {
+    display: none;
+  }
+  .search {
+    padding: 0.5rem;
+  }
+}
+@media screen and(max-width:450px) {
+  .search{
+    .s_right{
+      .s_right_personIcon{
+        display: none;
+      }
+      .s_right_heartIcon{
+        display: none;
+      }
+    }
+  }
+  }

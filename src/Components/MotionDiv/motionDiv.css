@@ -1,0 +1,132 @@
+.motionCardContainer {
+  overflow: hidden;
+}
+.motionCardContainer .motionSection1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.motionCardContainer .motionSection1 .motionLine {
+  flex: 1;
+  height: 2px;
+  background-color: var(--color1);
+}
+.motionCardContainer .motionSection1 .motionContent {
+  flex: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: var(--color1);
+  text-align: center;
+}
+.motionCardContainer .motionSection2 {
+  width: 100%;
+}
+.motionCardContainer .motionSection2 .motionCard {
+  display: flex;
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardImage {
+  flex: 1;
+  height: 300px;
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent p {
+  padding: 1rem;
+  color: var(--color3);
+  font-size: 1.3rem;
+  text-align: center;
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .secondContent {
+  color: rgb(168, 160, 160);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .thirdContent {
+  color: rgb(58, 78, 58);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .fourthContent {
+  color: rgb(79, 77, 77);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .motionTwoLittleBoxes_1 {
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  background-color: var(--color3);
+  color: whitesmoke;
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .motionTwoLittleBoxes_2 {
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color3);
+  color: var(--color3);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .secondContent {
+  background-color: rgb(168, 160, 160);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .secondBtn_1 {
+  background-color: rgb(168, 160, 160);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .secondBtn_2 {
+  border: 1px solid rgb(168, 160, 160);
+  color: rgb(168, 160, 160);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .thirdBtn_1 {
+  background-color: rgb(58, 78, 58);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .thirdBtn_2 {
+  border: 1px solid;
+  color: rgb(58, 78, 58);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .fourthBtn_1 {
+  background-color: rgb(79, 77, 77);
+}
+.motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .fourthBtn_2 {
+  border: 1px solid rgb(79, 77, 77);
+  color: rgb(79, 77, 77);
+}
+
+@media screen and (max-width: 1060px) {
+  .motionCardContainer .motionSection1 {
+    flex-direction: column;
+  }
+  .motionCardContainer .motionSection2 {
+    margin-top: 1rem;
+  }
+  .motionCardContainer .motionSection2 .motionCard {
+    flex-direction: column;
+  }
+  .motionCardContainer .motionSection2 .secondBox .secondBoxContent {
+    order: 1;
+  }
+  .motionCardContainer .motionSection2 .lastBox {
+    order: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .motionCardContainer .motionSection2 .motionCard .motionCardContent p {
+    font-size: 1rem;
+  }
+  .motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .motionTwoLittleBoxes_1 {
+    font-size: 0.7rem;
+  }
+  .motionCardContainer .motionSection2 .motionCard .motionCardContent .motionTwoLittleBoxes .motionTwoLittleBoxes_2 {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=motionDiv.css.map */

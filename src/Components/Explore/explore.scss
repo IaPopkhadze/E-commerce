@@ -1,0 +1,147 @@
+.explore {
+
+
+  display: flex;
+  justify-content: center;
+  .exploreConatiner {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .exploreText {
+      width: 70%;
+      color: rgb(181, 179, 179);
+      font-size: 1rem;
+      font-family: sans-serif
+    }
+    .exploreTitle {
+      color: var(--color2);
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    gap: 1rem;
+    .parent_city_container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      width: 100%;
+      .child_city_container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .city_image {
+          width: 100%;
+          height: 100%;
+        }
+        .city_overlay {
+          width: 80%;
+          height: 80%;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 0.2rem;
+          position: absolute;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: 0.5s;
+          color: rgb(228, 222, 222);
+          gap: 1rem;
+          overflow: hidden;
+          h3 {
+            font-weight: bold;
+            font-size: 1.3rem;
+          }
+          p {
+            color: rgb(222, 215, 215);
+            text-align: center;
+            width: 200px;
+          }
+        }
+        .city_overlay:hover {
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.9);
+          color: var(--color3);
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1320px) {
+  .explore {
+    .exploreConatiner {
+      .parent_city_container {
+        grid-template-columns: repeat(3, 1fr);
+        color: red;
+      }
+    }
+  }
+}
+@media screen and(max-width:1090px) {
+  .explore {
+    .exploreConatiner {
+      .exploreText{
+        width: 70%;
+      }
+      .parent_city_container {
+        grid-template-columns: repeat(2, 1fr);
+        color: red;
+      }
+    }
+  }
+}
+@media screen and(max-width:700px) {
+  .explore {
+    .exploreConatiner {
+      .exploreText{
+        width: 95%;
+      }
+      .parent_city_container {
+        grid-template-columns: repeat(1, 1fr);
+        color: red;
+     .child_city_container{
+      .city_overlay{
+        p{
+          font-size: 1.5rem;
+          width: 95%;
+        }
+        h3{
+          font-size: 2rem;
+        }
+      }
+     }
+      }
+    }
+  }
+}
+@media screen and(max-width:480px) {
+  .explore {
+    .exploreConatiner {
+      .exploreText{
+        width: 99%;
+      }
+      .parent_city_container {
+        grid-template-columns: repeat(1, 1fr);
+        color: red;
+     .child_city_container{
+      .city_overlay{
+        p{
+          font-size: 1.3rem;
+          width: 95%;
+        }
+        h3{
+          font-size: 2rem;
+        }
+      }
+     }
+      }
+    }
+  }
+}
+
+

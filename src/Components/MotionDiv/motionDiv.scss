@@ -1,0 +1,153 @@
+.motionCardContainer {
+
+
+  overflow: hidden;
+  .motionSection1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .motionLine {
+      flex: 1;
+
+      height: 2px;
+      background-color: var(--color1);
+    }
+    .motionContent {
+      flex: 1;
+      padding: 1rem;
+      box-sizing: border-box;
+      color: var(--color1);
+      text-align: center;
+    }
+  }
+  .motionSection2 {
+    width: 100%;
+    .motionCard {
+      display: flex;
+      .motionCardImage {
+       
+        flex: 1;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+      .motionCardContent {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+          padding: 1rem;
+          color: var(--color3);
+          font-size: 1.3rem;
+
+          text-align: center;
+        }
+        .secondContent {
+          color: rgb(168, 160, 160);
+        }
+        .thirdContent{
+            color: rgb(58, 78, 58);
+        }
+        .fourthContent{
+           color: rgb(79, 77, 77);
+        }
+        .motionTwoLittleBoxes {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          .motionTwoLittleBoxes_1 {
+            padding: 1rem;
+            font-weight: bold;
+            border-radius: 0.5rem;
+            background-color: var(--color3);
+            color: whitesmoke;
+          }
+          .motionTwoLittleBoxes_2 {
+            padding: 1rem;
+            font-weight: bold;
+            border-radius: 0.5rem;
+            border: 1px solid var(--color3);
+            color: var(--color3);
+          }
+          .secondContent {
+            background-color: rgb(168, 160, 160);
+          }
+          .secondBtn_1 {
+            background-color: rgb(168, 160, 160);
+          }
+          .secondBtn_2 {
+            border: 1px solid rgb(168, 160, 160);
+            color: rgb(168, 160, 160);
+          }
+          .thirdBtn_1 {
+            background-color: rgb(58, 78, 58);
+          }
+          .thirdBtn_2 {
+            border: 1px solid;
+            color: rgb(58, 78, 58);
+          }
+          .fourthBtn_1{
+              background-color: rgb(79, 77, 77);
+          }
+          .fourthBtn_2{
+            border: 1px solid  rgb(79, 77, 77);
+           color:  rgb(79, 77, 77);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media  screen  and(max-width:1060px) {
+    .motionCardContainer{
+        .motionSection1{
+            flex-direction: column;
+        }
+        .motionSection2{
+            margin-top: 1rem;
+            .motionCard{
+                flex-direction: column;
+            }
+            .secondBox{
+                .secondBoxContent{
+                    order: 1;
+                }
+            }
+            .lastBox{
+               order: 1;
+            }
+        }
+    }
+}
+
+
+@media  screen  and(max-width:500px) {
+    .motionCardContainer{
+      
+        .motionSection2{
+            .motionCard{
+                .motionCardContent{
+                    p{
+                        font-size: 1rem;
+                    }
+                    .motionTwoLittleBoxes{
+                        .motionTwoLittleBoxes_1{
+                             font-size: 0.7rem;
+                        }
+                        .motionTwoLittleBoxes_2{
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

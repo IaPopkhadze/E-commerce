@@ -1,0 +1,129 @@
+.sale {
+  width: 100%;
+  .sale_images {
+    width: 100%;
+    display: flex;
+    .sale_images_1 {
+      overflow: hidden;
+      flex: 1;
+      height: 500px;
+
+      img {
+        width: 102%;
+        height: 101%;
+
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .sale_images_2_3 {
+      flex: 1;
+      display: flex;
+
+      .sale_images_2 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 70%;
+
+          object-fit: cover;
+          object-position: right;
+          transform: rotate(-35deg);
+          transition: 0.7s;
+          cursor: pointer;
+        }
+        img:hover {
+          transform: rotate(-10deg);
+          transform: scale(1.1);
+        }
+      }
+      .sale_images_3 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+          li {
+            margin-top: 1rem;
+            color: rgb(56, 111, 56);
+            border-bottom: 1px solid rgb(223, 214, 214);
+          }
+          .iphone_descrition {
+            color: rgb(198, 86, 86);
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1300px ) {
+  .sale {
+    .sale_images {
+      display: flex;
+      flex-direction: column;
+      .sale_images_2_3 {
+        .sale_images_2 {
+          flex: 1;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 40%;
+          }
+        }
+
+        .sale_images_3 {
+          flex: 1;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          ul {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1070px ) {
+  .sale {
+    .sale_images {
+      .sale_images_2_3 {
+        .sale_images_3 {
+          ul {
+            width: 100%;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:650px ) {
+    .sale {
+      .sale_images {
+        .sale_images_2_3 {
+            display: flex;
+            flex-direction: column;
+          .sale_images_3 {
+            ul {
+              width: 90%;
+              padding: 1rem;
+              li{
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
